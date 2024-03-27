@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+header {
+  background-color: #282828;
+  color: #f17807;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  display: inline-table;
+  text-align: center;
+  position: sticky;
+  font-size: 1.6vmax;
+  text-transform: capitalize;
+  top: 0px;
+  z-index: 99999;
+}
+
+.a:hover {
+  transition: all 0.5s 0s ease;
+  color: #138301;
+  scale: 1.5vh;
+}
+
+.navbar {
+  box-shadow: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: ruby;
+  /* margin-right: 20px; */
+  margin-bottom: -15px !important;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+
+#T_logo {
+    width: 20vmin;
+    height: 3vh;
+    position: absolute;
+    left: 1vw;
+    top: 3.8vmin;
+}
+
+/* #T_logo {
+    width: 10vmin;
+    height: 8vh;
+    position: absolute;
+    left: 1vw;
+    top: 0vh;
+} */
+
+header .log {
+  padding: 5px;
+  display: ruby;
+  position: absolute;
+  top: 25%;
+  right:1.2%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f17807;
+  color: #282828 !important;
+}
+
+.main-content {
+  padding: 40px;
+  text-align: center;
+}
+
+article a {
+  list-style-type: none;
+  text-decoration: none;
+  width: fit-content;
+  padding: 5px;
+  color: #282828;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 25px;
+  background-color: #f17807;
+}
+article a:hover,
+header .log:hover {
+  background-color: #138301;
+}
+ul .link {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+
+footer {
+  background-color: #282828;
+  color: #f17807;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 15px;
+  margin-top: -20px;
+  font-style: italic;
+  font-size: 2.4vmax;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#teamW {
+  margin-bottom: 20px;
+  font-style: normal;
+  display: inline-block;
+  font-size: 2.3vmax;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#T_logo2 {
+  width: 45px;
+  height: 100%;
+  display: in;
+  position: relative;
+  left: -0.5%;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 1.6vmax;
+}
+
+article a {
+  list-style-type: none;
+  text-decoration: none;
+  width: fit-content;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 25px;
+  background-color: #f17807;
+}
+
+ul .link {
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+
+/* ------------------cards styles-----------------------*/
+.card div {
+  height: 400px;
+  border: 1px solid #c2c2c2;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-image: url("../images/civil.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: inline-table;
+  position: relative;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+:root {
+  --wid: 40px;
+  --hei: 40px;
+}
+
+.card .M:hover {
+  transform: scale(1.05);
+  transition: all 1s 0s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card .ConLog2 {
+  margin: 0px;
+  background-color: #282828;
+  border: none !important;
+  box-shadow: none !important;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  max-height: 100px;
+  z-index: 15;
+}
+
+.card #Alaa,
+.card #Abdo,
+.card #Ahmed,
+.card #Amr,
+.card #Asmaa {
+  background-image: none !important;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  display: ruby;
+  position: relative;
+  left: 0%;
+  border-radius: 100%;
+  border: 5px solid #fffdf1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  z-index: 20;
+}
+
+.card .ked {
+  width: var(--wid);
+  height: var(--hei);
+  border-radius: 0px;
+  display: flex;
+}
+
+.card .ked:hover {
+  background-color: #0a66c2;
+  border-radius: 100%;
+}
+
+.card .face {
+  width: var(--wid);
+  height: var(--hei);
+  border-radius: 0px;
+  display: flex;
+}
+
+.card .face:hover {
+  background-color: #0866ff;
+  border-radius: 100%;
+}
+
+.card .up {
+  width: var(--wid);
+  height: var(--hei);
+  border-radius: 0px;
+  display: flex;
+}
+
+.card .up:hover {
+  background-color: #00ac00;
+  border-radius: 100%;
+}
+
+.card .Gm {
+  width: var(--wid);
+  height: var(--hei);
+  border-radius: 0px;
+  display: flex;
+  background-image: url("../images/black.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.card .Gm:hover {
+  background-image: url("../images/COLOR.png") !important;
+  border-radius: 100%;
+}
+
+.card .ked,
+.card .face,
+.card .up,
+.card .Gm {
+  transition: all 0.2s 0s ease-in-out;
+  border: none !important;
+}
+
+.card .ked:hover,
+.card .face:hover,
+.card .up:hover,
+.card .Gm:hover {
+  scale: 1.25 !important;
+}
+
+.card h3 {
+  font-size: 17.5px;
+  margin-bottom: 0px;/****10px*****/
+  margin-top: 10px;/****remove*****/
+}
+.card h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+
+.card button {
+  background-color: #c1e4e6;
+  color: #000000;
+  border: none;
+  width: 120px;
+  /* margin-top: 20px; */
+  height: fit-content;
+  font-size: 20px;
+  display: block;
+  position: relative;
+  left: 23%;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: normal;
+}
+
+.M .ConLog {
+  background-color: #ffffff00;
+  color: #fff;
+  border: none !important;
+  box-shadow: none !important;
+  background-image: none;
+  width: calc((100% - 5px) / 4);
+  margin-top: 5px;
+  margin-left: 1px;
+  max-height: 50px;
+  display: -webkit-inline-box;
+  /* position: relative; */
+  font-size: 20px;
+  /* padding: 5px 10px; */
+}
+
+/***************************======slider======********************************/
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+img {
+  width: 1500px;
+  height: 550px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #f17807;
+  cursor: pointer;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #333;
+  border: 2px solid #000000;
+}
+.arrow:hover {
+  color: #138301;
+}
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+#selc img {
+  width: 150px;
+  height: 150px;
+  display: ruby;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#login {
+  font-size: 1.5vmax !important;
+  top: 2.2dvh;
+}
+
+#reee {
+  width: 110px !important;
+  height: 110px !important;
+}
